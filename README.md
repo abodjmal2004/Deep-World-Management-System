@@ -13,19 +13,19 @@
 
 ### Authentication & Dashboard
 <p align="center">
-  <img src="https://raw.githubusercontent.com/abodjmal2004/Deep-World-Management-System/main/images/login.png" width="400" alt="Login Screen">
-  <img src="https://raw.githubusercontent.com/abodjmal2004/Deep-World-Management-System/main/images/register.png" width="400" alt="Register Screen">
+  <img src="https://raw.githubusercontent.com/abodjmal2004/Deep-World-Management-System/main/screenshots_v2/login.png" width="400" alt="Login Screen">
+  <img src="https://raw.githubusercontent.com/abodjmal2004/Deep-World-Management-System/main/screenshots_v2/register.png" width="400" alt="Register Screen">
 </p>
 
 ### Management & Library
 <p align="center">
-  <img src="https://raw.githubusercontent.com/abodjmal2004/Deep-World-Management-System/main/images/admin_panel.png" width="400" alt="Admin Dashboard">
-  <img src="https://raw.githubusercontent.com/abodjmal2004/Deep-World-Management-System/main/images/pdf_library.png" width="400" alt="PDF Library">
+  <img src="https://raw.githubusercontent.com/abodjmal2004/Deep-World-Management-System/main/screenshots_v2/admin_panel.png" width="400" alt="Admin Dashboard">
+  <img src="https://raw.githubusercontent.com/abodjmal2004/Deep-World-Management-System/main/screenshots_v2/pdf_library.png" width="400" alt="PDF Library">
 </p>
 
 ### About the Developer
 <p align="center">
-  <img src="https://raw.githubusercontent.com/abodjmal2004/Deep-World-Management-System/main/images/about_us.png" width="600" alt="About Us">
+  <img src="https://raw.githubusercontent.com/abodjmal2004/Deep-World-Management-System/main/screenshots_v2/about_us.png" width="600" alt="About Us">
 </p>
 
 ---
