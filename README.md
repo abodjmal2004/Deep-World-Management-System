@@ -11,19 +11,16 @@
 
 ## 📸 Screenshots
 
-<p align="center">
-  <img src="https://github.com/abodjmal2004/Deep-World-Management-System/raw/main/assets/screenshots/login.png" width="400" alt="Login Screen">
-  <img src="https://github.com/abodjmal2004/Deep-World-Management-System/raw/main/assets/screenshots/register.png" width="400" alt="Register Screen">
-</p>
+### Authentication & Dashboard
+![Login Screen](assets/screenshots/login.png)
+![Register Screen](assets/screenshots/register.png)
 
-<p align="center">
-  <img src="https://github.com/abodjmal2004/Deep-World-Management-System/raw/main/assets/screenshots/admin_panel.png" width="400" alt="Admin Dashboard">
-  <img src="https://github.com/abodjmal2004/Deep-World-Management-System/raw/main/assets/screenshots/pdf_library.png" width="400" alt="PDF Library">
-</p>
+### Management & Library
+![Admin Dashboard](assets/screenshots/admin_panel.png)
+![PDF Library](assets/screenshots/pdf_library.png)
 
-<p align="center">
-  <img src="https://github.com/abodjmal2004/Deep-World-Management-System/raw/main/assets/screenshots/about_us.png" width="600" alt="About Us">
-</p>
+### About the Developer
+![About Us](assets/screenshots/about_us.png)
 
 ---
 
