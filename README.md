@@ -12,15 +12,15 @@
 ## 📸 Screenshots
 
 ### Authentication & Dashboard
-![Login Screen](assets/screenshots/login.png)
-![Register Screen](assets/screenshots/register.png)
+![Login Screen](images/login.png)
+![Register Screen](images/register.png)
 
 ### Management & Library
-![Admin Dashboard](assets/screenshots/admin_panel.png)
-![PDF Library](assets/screenshots/pdf_library.png)
+![Admin Dashboard](images/admin_panel.png)
+![PDF Library](images/pdf_library.png)
 
 ### About the Developer
-![About Us](assets/screenshots/about_us.png)
+![About Us](images/about_us.png)
 
 ---
 
