@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.AdminpageController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <BorderPane layoutX="393.0" layoutY="182.0" prefHeight="600.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <left>
+                  <AnchorPane prefHeight="600.0" prefWidth="233.0" style="-fx-background-color: #3B060A;" stylesheets="@../Stayil/Style_css.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="23.0" layoutY="8.8" prefHeight="93.0" prefWidth="246.0" stylesheets="@../Stayil/Style_css.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label layoutX="13.0" layoutY="31.0" prefHeight="32.0" prefWidth="208.0" styleClass="label-title-glow" stylesheets="@../Stayil/Style_css.css" text="Management System" textFill="#ffffff80">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <Label layoutX="27.0" layoutY="122.0" styleClass="label-title-red" stylesheets="@../Stayil/Style_css.css" text="Welcome Admin" textFill="#d0d9c4c7" />
+                        <Button fx:id="dashbord_btn" layoutX="6.0" layoutY="183.0" mnemonicParsing="false" onAction="#dashbord_btn" prefHeight="40.0" prefWidth="222.0" styleClass="btn-deep-red" stylesheets="@../Stayil/Style_css.css" text="Dashboard" />
+                        <Button fx:id="productmang_btn" layoutX="6.0" layoutY="235.0" mnemonicParsing="false" onAction="#productmang_btn" prefHeight="40.0" prefWidth="222.0" styleClass="btn-deep-red" stylesheets="@../Stayil/Style_css.css" text="Product Management" />
+                        <Button fx:id="primeomusers_btn" layoutX="6.0" layoutY="291.0" mnemonicParsing="false" onAction="#primeomusers_btn" prefHeight="40.0" prefWidth="222.0" styleClass="btn-deep-red" stylesheets="@../Stayil/Style_css.css" text="Primeom users" />
+                        <Button fx:id="customers_btn" layoutX="6.0" layoutY="343.0" mnemonicParsing="false" onAction="#customers_btn" prefHeight="40.0" prefWidth="222.0" styleClass="btn-deep-red" stylesheets="@../Stayil/Style_css.css" text="Customers" />
+                        <Button layoutX="14.0" layoutY="550.0" minWidth="51.0" mnemonicParsing="false" onAction="#logout" prefHeight="29.0" prefWidth="51.0" style="-fx-background-color: #CFAB8D;" styleClass="btn-outline" stylesheets="@../Stayil/Style_css.css" text="Logout">
+                           <font>
+                              <Font size="7.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane layoutX="193.0" layoutY="135.0" prefHeight="600.0" prefWidth="866.4" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane fx:id="anchorpan_dashbord_users" layoutX="221.0" layoutY="177.0" prefHeight="600.0" prefWidth="866.4" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="181.0" layoutY="164.0" prefHeight="600.0" prefWidth="866.4" style="-fx-background-color: #000000;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                              <ScrollPane layoutX="10.0" layoutY="10.0" prefHeight="189.0" prefWidth="842.0" AnchorPane.bottomAnchor="400.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="13.600000000000023" AnchorPane.topAnchor="10.0">
+                                 <content>
+                                    <AnchorPane prefHeight="180.0" prefWidth="985.0" stylesheets="@../Stayil/Style_css.css">
+                                       <children>
+                                          <AnchorPane layoutX="8.0" layoutY="5.0" prefHeight="170.0" prefWidth="243.0" styleClass="ancerpan" stylesheets="@../Stayil/Style_css.css">
+                                             <children>
+                                                <Label layoutX="79.0" layoutY="134.0" text="Number of Customers">
+                                                   <font>
+                                                      <Font name="System Bold" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="NumberofCustomers_lbl" alignment="TOP_RIGHT" layoutX="131.0" layoutY="14.0" prefHeight="18.0" prefWidth="86.0" text="0" />
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="260.0" layoutY="5.0" prefHeight="170.0" prefWidth="243.0" styleClass="ancerpan" stylesheets="@../Stayil/Style_css.css">
+                                             <children>
+                                                <Label layoutX="79.0" layoutY="134.0" text="Today Income">
+                                                   <font>
+                                                      <Font name="System Bold" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="TodayIncome_lbl" alignment="TOP_RIGHT" layoutX="131.0" layoutY="14.0" prefHeight="18.0" prefWidth="86.0" text="\$0.0" />
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="516.0" layoutY="5.0" prefHeight="170.0" prefWidth="243.0" styleClass="ancerpan" stylesheets="@../Stayil/Style_css.css">
+                                             <children>
+                                                <Label layoutX="79.0" layoutY="134.0" text="Total Income">
+                                                   <font>
+                                                      <Font name="System Bold" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="TotalIncome_lbl" alignment="TOP_RIGHT" layoutX="131.0" layoutY="14.0" prefHeight="18.0" prefWidth="86.0" text="\$0.0" />
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="771.0" layoutY="5.0" prefHeight="170.0" prefWidth="243.0" styleClass="ancerpan" stylesheets="@../Stayil/Style_css.css">
+                                             <children>
+                                                <Label layoutX="79.0" layoutY="134.0" text="Number of Sold Products">
+                                                   <font>
+                                                      <Font name="System Bold" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="NumberofSoldProducts_lbl" alignment="TOP_RIGHT" layoutX="131.0" layoutY="14.0" prefHeight="18.0" prefWidth="86.0" text="0" />
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </ScrollPane>
+                              <AnchorPane layoutX="9.0" layoutY="209.0" prefHeight="382.0" prefWidth="846.0" stylesheets="@../Stayil/Style_css.css" AnchorPane.bottomAnchor="8.800000000000011" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="11.200000000000045" AnchorPane.topAnchor="209.0">
+                                 <styleClass>
+                                    <String fx:value="radiuse" />
+                                    <String fx:value="white-bg" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                                 <children>
+                                    <AnchorPane layoutX="11.0" layoutY="9.0" prefHeight="364.0" prefWidth="398.0" stylesheets="@../Stayil/Style_css.css">
+                                       <styleClass>
+                                          <String fx:value="white-bg" />
+                                          <String fx:value="shadow" />
+                                          <String fx:value="radiuse" />
+                                       </styleClass>
+                                       <children>
+                                          <AreaChart fx:id="areachart" layoutX="-109.0" layoutY="-28.0" prefHeight="372.0" prefWidth="398.4" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <xAxis>
+                                              <CategoryAxis side="BOTTOM" />
+                                            </xAxis>
+                                            <yAxis>
+                                              <NumberAxis side="LEFT" />
+                                            </yAxis>
+                                          </AreaChart>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane layoutX="425.0" layoutY="11.0" prefHeight="360.0" prefWidth="408.0" stylesheets="@../Stayil/Style_css.css">
+                                       <styleClass>
+                                          <String fx:value="white-bg" />
+                                          <String fx:value="shadow" />
+                                          <String fx:value="radiuse" />
+                                       </styleClass>
+                                       <children>
+                                          <BarChart fx:id="barchart" layoutX="-161.0" layoutY="-105.0" prefHeight="360.0" prefWidth="408.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <xAxis>
+                                              <CategoryAxis side="BOTTOM" />
+                                            </xAxis>
+                                            <yAxis>
+                                              <NumberAxis side="LEFT" />
+                                            </yAxis>
+                                          </BarChart>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="anchorpan_dashbord_product" layoutX="194.0" layoutY="150.0" prefHeight="600.0" prefWidth="866.4" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="14.0" layoutY="9.0" prefHeight="276.0" prefWidth="842.0" stylesheets="@../Stayil/Style_css.css">
+                                 <styleClass>
+                                    <String fx:value="white-bg" />
+                                    <String fx:value="radiuse" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                                 <children>
+                                    <TableView fx:id="productTable" layoutX="14.0" layoutY="0.8" onMouseClicked="#fillFormFromSelected" prefHeight="276.0" prefWidth="842.4" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                      <columns>
+                                        <TableColumn fx:id="product_name_c1" prefWidth="190.3999729156494" text="Product Name" />
+                                        <TableColumn fx:id="type_product_c2" prefWidth="184.0" text="Type Pproduct" />
+                                          <TableColumn fx:id="price_c3" prefWidth="197.60000610351562" text="Price" />
+                                          <TableColumn fx:id="type_users_c4" prefWidth="315.20001220703125" text="Type users" />
+                                      </columns>
+                                       <columnResizePolicy>
+                                          <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                       </columnResizePolicy>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="14.0" layoutY="308.0" prefHeight="279.0" prefWidth="843.0" stylesheets="@../Stayil/Style_css.css">
+                                 <styleClass>
+                                    <String fx:value="white-bg" />
+                                    <String fx:value="shadow" />
+                                    <String fx:value="radiuse" />
+                                 </styleClass>
+                                 <children>
+                                    <Label layoutX="33.0" layoutY="24.0" styleClass="label-title-glow" stylesheets="@../Stayil/Style_css.css" text="Product Name" />
+                                    <Label layoutX="71.0" layoutY="94.0" styleClass="label-title-glow" stylesheets="@../Stayil/Style_css.css" text="Price" />
+                                    <TextField fx:id="product_name_tx" layoutX="181.0" layoutY="21.0" styleClass="input-modern" stylesheets="@../Stayil/Style_css.css" />
+                                    <TextField fx:id="price_tx" layoutX="146.0" layoutY="91.0" promptText="0.0" styleClass="input-modern" stylesheets="@../Stayil/Style_css.css" />
+                                    <AnchorPane layoutX="667.0" layoutY="24.0" prefHeight="164.0" prefWidth="150.0" stylesheets="@../Stayil/Style_css.css">
+                                       <children>
+                                          <ImageView fx:id="image_path_imgvew" fitHeight="164.0" fitWidth="168.0" layoutX="2.0" pickOnBounds="true" preserveRatio="true" />
+                                       </children>
+                                       <styleClass>
+                                          <String fx:value="white-bg" />
+                                          <String fx:value="radiuse" />
+                                          <String fx:value="shadow" />
+                                       </styleClass>
+                                    </AnchorPane>
+                                    <Button fx:id="import_image_path_btn" layoutX="698.0" layoutY="198.0" mnemonicParsing="false" onAction="#import_image_path_btn" prefHeight="34.0" prefWidth="114.0" styleClass="input-clean" stylesheets="@../Stayil/Style_css.css" text="Import" />
+                                    <Button fx:id="add_btn" layoutX="52.0" layoutY="206.0" mnemonicParsing="false" onAction="#add_btn" prefHeight="34.0" prefWidth="114.0" styleClass="btn-green" stylesheets="@../Stayil/Style_css.css" text="Add" />
+                                    <Button fx:id="delet_btn" layoutX="187.0" layoutY="206.0" mnemonicParsing="false" onAction="#delet_btn" prefHeight="34.0" prefWidth="114.0" styleClass="btn-deep-red" stylesheets="@../Stayil/Style_css.css" text="Delet" />
+                                    <Button fx:id="clear_btn" layoutX="317.0" layoutY="206.0" mnemonicParsing="false" onAction="#clear" prefHeight="34.0" prefWidth="114.0" styleClass="btn-red" stylesheets="@../Stayil/Style_css.css" text="Clear" />
+                                    <Button fx:id="update_btn" layoutX="450.0" layoutY="206.0" mnemonicParsing="false" onAction="#update_btn" prefHeight="34.0" prefWidth="114.0" styleClass="btn-blue" stylesheets="@../Stayil/Style_css.css" text="Update" />
+                                    <Label layoutX="372.0" layoutY="24.0" styleClass="label-title-glow" stylesheets="@../Stayil/Style_css.css" text="Type users" />
+                                    <TextField fx:id="type_users_tx" layoutX="487.0" layoutY="21.0" styleClass="input-modern" stylesheets="@../Stayil/Style_css.css" />
+                                    <Label fx:id="massge_Label" layoutX="248.0" layoutY="149.0" prefHeight="18.0" prefWidth="182.0" />
+                                    <RadioButton fx:id="corses_Radio" layoutX="392.0" layoutY="64.0" mnemonicParsing="false" text="corses" />
+                                    <RadioButton fx:id="pdf_books_Radio" layoutX="392.0" layoutY="103.0" mnemonicParsing="false" text="pdf_books" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

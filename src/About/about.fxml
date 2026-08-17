@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="About.AboutController">
+   <children>
+      <AnchorPane layoutX="-1.0" prefHeight="500.0" prefWidth="215.0" style="-fx-background-color: #1a0000;">
+         <children>
+            <HBox layoutX="1.0" prefHeight="140.0" prefWidth="215.0" styleClass="imge-abut" stylesheets="@../Stayil/Style_css.css">
+               <children>
+                  <ImageView id="imge-abut" fitHeight="126.0" fitWidth="143.0" pickOnBounds="true" preserveRatio="true" styleClass="bakgraund-img">
+                     <image>
+                        <Image url="@../img/Picsart_25-06-13_15-08-46-727.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="40.0" right="10.0" top="15.0" />
+               </padding>
+            </HBox>
+            <AnchorPane layoutX="8.0" layoutY="148.0" prefHeight="349.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="51.0" layoutY="5.0" prefHeight="18.0" prefWidth="98.0" text="Abod Jamal" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="50.0" onDragDetected="#updat_btn" prefHeight="42.0" prefWidth="160.0" text="تحديثات" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="10.0" left="30.0" right="10.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="89.0" onDragDetected="#sport_btn" prefHeight="40.0" prefWidth="160.0" text="تواصل مع المطور" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="10.0" left="30.0" right="10.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="126.0" prefHeight="40.0" prefWidth="160.0" text="صيانة" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="10.0" left="30.0" right="10.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="163.0" prefHeight="40.0" prefWidth="160.0" text="طلب البرمجة" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="10.0" left="30.0" right="10.0" />
+                     </padding>
+                  </Label>
+                  <Button layoutX="14.0" layoutY="306.0" minWidth="51.0" mnemonicParsing="false" onAction="#logout" prefHeight="29.0" prefWidth="51.0" styleClass="btn-outline" stylesheets="@../Stayil/Style_css.css" text="Logout">
+                     <font>
+                        <Font size="7.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="216.0" prefHeight="500.0" prefWidth="585.0" style="-fx-background-color: #330000;">
+         <children>
+            <Label layoutX="213.0" layoutY="14.0" prefHeight="27.0" prefWidth="160.0" text="About us" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+            </Label>
+            <VBox layoutX="7.0" layoutY="65.0" prefHeight="302.0" prefWidth="566.0">
+               <children>
+                  <HBox prefHeight="28.0" prefWidth="558.0">
+                     <children>
+                        <HBox prefHeight="42.0" prefWidth="558.0">
+                           <children>
+                              <Label prefHeight="40.0" prefWidth="351.0" text="Name: Abod Jamal" textFill="WHITE">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="28.0" prefWidth="558.0">
+                     <children>
+                        <HBox prefHeight="42.0" prefWidth="558.0">
+                           <children>
+                              <Label prefHeight="40.0" prefWidth="351.0" text="Major: Computer Science" textFill="WHITE">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="28.0" prefWidth="558.0">
+                     <children>
+                        <HBox prefHeight="42.0" prefWidth="558.0">
+                           <children>
+                              <Label prefHeight="40.0" prefWidth="351.0" text="University: [Your University]" textFill="WHITE">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="28.0" prefWidth="558.0">
+                     <children>
+                        <Label prefHeight="28.0" prefWidth="561.0" text="Interests: Programming, UI design, problem-solving, sports" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="28.0" prefWidth="558.0">
+                     <children>
+                        <HBox prefHeight="42.0" prefWidth="558.0">
+                           <children>
+                              <Label prefHeight="28.0" prefWidth="561.0" text="Skills: Java, JavaFX, MySQL (JDBC), MVC/DAO, Git" textFill="WHITE">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="28.0" prefWidth="558.0">
+                     <children>
+                        <HBox prefHeight="42.0" prefWidth="558.0">
+                           <children>
+                              <Label prefHeight="28.0" prefWidth="561.0" text="Current focus: Authentication, secure password hashing, dashboards &amp; charts" textFill="WHITE">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="28.0" prefWidth="558.0">
+                     <children>
+                        <HBox prefHeight="42.0" prefWidth="558.0">
+                           <children>
+                              <Label prefHeight="28.0" prefWidth="561.0" text="Goal this year: Ship a clean desktop app and contribute to open-source" textFill="WHITE">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="42.0" prefWidth="558.0">
+                     <children>
+                        <Label prefHeight="40.0" prefWidth="351.0" text="Student ID: 2021xxxxx" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="42.0" prefWidth="558.0">
+                     <children>
+                        <Label prefHeight="40.0" prefWidth="351.0" text="Level: Second-year undergraduate" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

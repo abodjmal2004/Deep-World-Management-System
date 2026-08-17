@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="534.0" prefWidth="864.0" style="-fx-background-color: #1a0000;" styleClass="bakgraund-img" stylesheets="@../Stayil/Style_css.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Home.HomeController">
+   <children>
+      <ImageView fitHeight="489.0" fitWidth="870.0" layoutX="-6.0" layoutY="57.0" opacity="0.87" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/photo_2025-06-05_18-43-03.jpg" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="58.0" prefWidth="864.0" style="-fx-background-color: #000000;" styleClass="top-par" stylesheets="@../Stayil/Style_css.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="home_btn" mnemonicParsing="false" onAction="#home_btn" prefHeight="29.0" prefWidth="53.0" styleClass="btn-outline" stylesheets="@../Stayil/Style_css.css" text="Home">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="pdf_btn" mnemonicParsing="false" onAction="#pdf_btn" prefHeight="29.0" prefWidth="81.0" styleClass="btn-outline" stylesheets="@../Stayil/Style_css.css" text="PDF Library">
+               <HBox.margin>
+                  <Insets right="15.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="Courses_btn" mnemonicParsing="false" onAction="#Courses_btn" prefHeight="30.0" prefWidth="62.0" styleClass="btn-outline" stylesheets="@../Stayil/Style_css.css" text="Courses">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="about_btn" mnemonicParsing="false" onAction="#about_btn" prefHeight="30.0" prefWidth="55.0" styleClass="btn-outline" stylesheets="@../Stayil/Style_css.css" text="About" />
+            <Pane prefHeight="58.0" prefWidth="153.0" stylesheets="@../Stayil/Style_css.css" />
+            <HBox alignment="CENTER" prefHeight="59.0" prefWidth="241.0">
+               <children>
+                  <ImageView fitHeight="20.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/search_4687318.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <TextField prefHeight="26.0" prefWidth="175.0" promptText="Sarch" />
+               </children>
+            </HBox>
+            <Separator maxHeight="30.0" minHeight="30.0" orientation="VERTICAL" prefHeight="30.0" />
+            <Button fx:id="logout_btn" mnemonicParsing="false" onAction="#logout_btn" styleClass="btn-deep-red" stylesheets="@../Stayil/Style_css.css" text="Logout">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <Label layoutX="40.0" layoutY="155.0" text="Welcome To The Deep World" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="328.0" layoutY="267.0" text="  ماذا تريد أن تتعلم ؟" textAlignment="CENTER" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Bookman Old Style Bold" size="20.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="31.0" layoutY="338.0" prefHeight="127.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="163.0" fitWidth="200.0" opacity="0.53" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/laptop-which-there-is-world-people-drawn.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutY="55.0" text="شبكات الحاسوب " textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="318.0" layoutY="337.0" prefHeight="134.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/programming-background-collage.jpg" />
+                  
+               </image>
+            </ImageView>
+            <Label layoutX="62.0" layoutY="56.0" text="برمجة" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="32.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="593.0" layoutY="337.0" prefHeight="134.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="210.0" layoutX="8.0" layoutY="-4.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/ideas-design-draft-creative-sketch-objective-concept.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="58.0" layoutY="51.0" text="تصميم" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="32.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
