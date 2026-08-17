@@ -12,17 +12,17 @@
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="assets/screenshots/login.png" width="48%" alt="Login Screen">
-  <img src="assets/screenshots/register.png" width="48%" alt="Register Screen">
+  <img src="assets/screenshots/login.png" width="400" alt="Login Screen">
+  <img src="assets/screenshots/register.png" width="400" alt="Register Screen">
 </p>
 
 <p align="center">
-  <img src="assets/screenshots/admin_panel.png" width="48%" alt="Admin Dashboard">
-  <img src="assets/screenshots/pdf_library.png" width="48%" alt="PDF Library">
+  <img src="assets/screenshots/admin_panel.png" width="400" alt="Admin Dashboard">
+  <img src="assets/screenshots/pdf_library.png" width="400" alt="PDF Library">
 </p>
 
 <p align="center">
-  <img src="assets/screenshots/about_us.png" width="60%" alt="About Us">
+  <img src="assets/screenshots/about_us.png" width="600" alt="About Us">
 </p>
 
 ---
